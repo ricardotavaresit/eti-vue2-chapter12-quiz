@@ -3,6 +3,7 @@
 <h2>Chapter 12 - Animations and transactions in Vue JS - Quiz</h2>
 
 - Class 02: Prepare quiz questions in Vue JS
+- Class 03: Generate question in Vue JS
 
 
 ## Technologies used
