@@ -5,7 +5,8 @@
 - Class 02: Prepare quiz questions in Vue JS
 - Class 03: Generate question in Vue JS
 - Class 04: Show components dynamically in Vue JS
-- Class 05: Show components success and error Vue JS
+- Class 05: Show components success and error in Vue JS
+- Class 06: Create transition between components in Vue JS
 
 
 ## Technologies used
