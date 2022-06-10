@@ -7,6 +7,8 @@
 
 <script>
 import Question from "./Question";
+import AnswerError from "./AnswerError";
+import AnswerSuccess from "./AnswerSuccess";
 export default {
   data() {
     return {
@@ -16,11 +18,18 @@ export default {
   },
   components: {
     "app-question": Question,
+    AnswerError,
+    AnswerSuccess,
   },
   methods: {
-    changeMode() {
-      alert("changeMode");
+    changeMode(mode) {
+      if (mode == undefined) {
+        this.mode = "app-question";
+      } else {
+        this.mode = mode;
+      }
     },
   },
 };
 </script>
+
