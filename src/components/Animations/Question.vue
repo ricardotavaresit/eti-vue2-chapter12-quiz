@@ -1,10 +1,14 @@
 <template>
-  <div class="defaul">
-    <h2 v-text="question"></h2>
-    <form v-on:submit.prevent="checkResult">
-      <input type="text" placeholder="Awswer" v-model="reply" />
-      <button type="submit">Awswer</button>
-    </form>
+  <div class="card">
+    <div class="card-header">
+      <h2 v-text="question"></h2>
+    </div>
+    <div class="card-body">
+      <form class="form form-inline" v-on:submit.prevent="checkResult">
+        <input class="form-control" type="text" placeholder="Awswer" v-model="reply" />
+        <button class="btn btn-primary" type="submit">Awswer</button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -46,7 +50,7 @@ export default {
 </script>
 
 <style scoped>
-.defaul{
+.defaul {
   border: 2px solid blue;
   background-color: #6f95dd;
 }
