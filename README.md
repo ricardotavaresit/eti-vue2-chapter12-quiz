@@ -7,6 +7,7 @@
 - Class 04: Show components dynamically in Vue JS
 - Class 05: Show components success and error in Vue JS
 - Class 06: Create transition between components in Vue JS
+- Class 07: Add bootstrap to porject in Vue JS
 
 
 ## Technologies used
