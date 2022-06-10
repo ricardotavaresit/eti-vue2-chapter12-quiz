@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 v-text="title"></h2>
-    <app-question />
+    <component :is="mode" v-on:changeMode="changeMode"></component>
   </div>
 </template>
 
@@ -11,10 +11,16 @@ export default {
   data() {
     return {
       title: "Component Quiz",
+      mode: "app-question",
     };
   },
   components: {
     "app-question": Question,
+  },
+  methods: {
+    changeMode() {
+      alert("changeMode");
+    },
   },
 };
 </script>
