@@ -1,5 +1,8 @@
 <template>
-  <h1>{{ title }}</h1>
+  <div class="success">
+    <h1>{{ title }}</h1>
+    <button v-on:click="nextQuestion">Next question</button>
+  </div>
 </template>
 
 
@@ -10,5 +13,16 @@ export default {
       title: "Success",
     };
   },
+  methods:{
+    nextQuestion(){
+      this.$emit("changeMode")
+    }
+  }
 };
 </script>
+<style scoped>
+.success{
+  border: 2px solid green;
+  background-color: #72d196;
+}
+</style>
