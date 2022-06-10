@@ -1,7 +1,7 @@
 <template>
-  <div class="error">
+  <div class="alert alert-danger text-center">
     <h1>{{ title }}</h1>
-    <button v-on:click="nextQuestion">Next question</button>
+    <button class="btn btn-danger" v-on:click="nextQuestion">Next question</button>
   </div>
 </template>
 
@@ -20,11 +20,3 @@ export default {
   },
 };
 </script>
-
-
-<style scoped>
-.error{
-  border: 2px solid red;
-  background-color: #dd95b3;
-}
-</style>
