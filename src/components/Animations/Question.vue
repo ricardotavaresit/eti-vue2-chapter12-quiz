@@ -40,6 +40,7 @@ export default {
       } else {
         alert("Wrong");
       }
+      this.$emit("changeMode");
     },
   },
 };
