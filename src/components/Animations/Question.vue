@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="defaul">
     <h2 v-text="question"></h2>
     <form v-on:submit.prevent="checkResult">
       <input type="text" placeholder="Awswer" v-model="reply" />
@@ -35,13 +35,20 @@ export default {
       return Math.round(Math.random() * max) + min;
     },
     checkResult() {
+      let mode = "answerError";
       if (this.reply == this.result) {
-        alert("Correct!");
-      } else {
-        alert("Wrong");
+        mode = "answerSuccess";
       }
-      this.$emit("changeMode");
+      this.$emit("changeMode", mode);
     },
   },
 };
 </script>
+
+<style scoped>
+.defaul{
+  border: 2px solid blue;
+  background-color: #6f95dd;
+}
+</style>
+
