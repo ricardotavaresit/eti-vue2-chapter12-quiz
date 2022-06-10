@@ -2,8 +2,8 @@
   <div id="app">
     <h1 v-text="msg"></h1>
     <app-quiz />
-    <hr />
-    <button class="bt-show" v-on:click.prevent="show = !show">Show</button>
+
+    <button class="bt-show btn btn btn-warning" v-on:click.prevent="show = !show">Show</button>
     <transition>
       <div class="presentation-area" v-if="show">Present...</div>
     </transition>
