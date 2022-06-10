@@ -1,7 +1,7 @@
 <template>
-  <div class="success">
+  <div class="alert alert-success align-center">
     <h1>{{ title }}</h1>
-    <button v-on:click="nextQuestion">Next question</button>
+    <button class="btn btn-success" v-on:click="nextQuestion">Next question</button>
   </div>
 </template>
 
@@ -20,9 +20,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.success{
-  border: 2px solid green;
-  background-color: #72d196;
-}
-</style>
